@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
     <title>Relexer</title>
-</head>
-<body>
+  </head>
+  <body
+    style="
+      background-image: url('https://firebasestorage.googleapis.com/v0/b/relaxer1-73633.appspot.com/o/background%2Fbg.jpg?alt=media&token=0049d8c7-e0bc-4a25-be9d-d317acce0a4a');
+    "
+  >
     <h1>Relaxer</h1>
 
     <div class="container" id="container">
-        <div class="circle"></div>
+      <div class="circle"></div>
 
-        <p id="text">Breathe In!</p>
+      <p id="text">Breathe In!</p>
 
-        <div class="pointer-container">
-            <span class="pointer"></span>
-        </div>
+      <div class="pointer-container">
+        <span class="pointer"></span>
+      </div>
 
-        <div class="gradient-circle"></div>
+      <div class="gradient-circle"></div>
     </div>
 
     <div class="audio-container" id="audio-container">
-        
-        <img src="" alt="Audio Image" id="audio-image">
-        <div class="audio-player-holder">
-            <audio src="" id="audio"></audio>
-            <div class="toggle-button">
-                <i class="fa fa-play"></i>
-            </div>
-
-            <div class="audio-info">
-                <p class="audio-player-artist">Soundroll</p>
-                <p class="audio-player-title">A Way To The Top</p>
-            </div>
-
-            <div class="audio-volume-wrapper">
-                <div class="audio-player-volume">
-                    <i class="fa fa-volume-up"></i>
-                </div>
-                <div class="audio-volume-bar">
-                     <div class="audio-volume-level"></div>
-                </div>
-            </div>
-            <div class="progress-container" id="progress-container">
-                <div class="progress" id="progress"></div>
-            </div>
-            <p class="audio-time-current">0:00</p>
-            <p class="audio-time-total">0:00</p>
+      <img src="" alt="Audio Image" id="audio-image" />
+      <div class="audio-player-holder">
+        <audio src="" id="audio"></audio>
+        <div class="toggle-button">
+          <i class="fa fa-play"></i>
         </div>
-        <div class="songsList-container">
-            <div class="songsList"></div>
+
+        <div class="audio-info">
+          <p class="audio-player-artist">Soundroll</p>
+          <p class="audio-player-title">A Way To The Top</p>
         </div>
+
+        <div class="audio-volume-wrapper">
+          <div class="audio-player-volume">
+            <i class="fa fa-volume-up"></i>
+          </div>
+          <div class="audio-volume-bar">
+            <div class="audio-volume-level"></div>
+          </div>
+        </div>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+        <p class="audio-time-current">0:00</p>
+        <p class="audio-time-total">0:00</p>
+      </div>
+      <div class="songsList-container">
+        <div class="songsList"></div>
+      </div>
     </div>
 
     <div class="toggle-upload">
-        <i class="fas fa-upload"></i>
+      <i class="fas fa-upload"></i>
     </div>
-    
+
     <div class="upload-audio">
-        <progress value="0" max="100" id="uploader">0%</progress>
-        <input type="file" value="upload" id="fileButton" />
+      <progress value="0" max="100" id="uploader">0%</progress>
+      <input type="file" value="upload" id="fileButton" />
     </div>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -73,5 +81,5 @@
 
     <!-- <script src="script.js"></script> -->
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>
